@@ -11,33 +11,44 @@
              <a href="about.html">Giới thiệu</a>
                <a href="myproduct.html">Sản phẩm</a>
         </nav>
-        <p><b>Đoàn Minh Hiếu</b></p>
+        <p class="name-brand">Đoàn Minh Hiếu</p>
         
     </header>
     
     <style>
+         /* Header & Navigation */
         header {
-    text-align: center;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-}
-header nav { padding: 15px; text-align: center; background-color: #f4f4f4; }
+            background-color: var(--white);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
 
-header b {
-    font-size: 26px;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 5px;
-}
+        nav {
+            margin-bottom: 15px;
+        }
 
-header p {
-    margin: 5px 0;
-    font-size: 15px;
-}
-        
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .name-brand {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 10px 0 0 0;
+        }      
         /* Toàn bộ CSS nằm trong này */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
