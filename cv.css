@@ -133,8 +133,8 @@ ul{
 
 }
 button{
-    background-color: rgb(206, 90, 113);
-    color : #a0c120;
+    background-color: rgb(238, 232, 233);
+    color : #000000;
 
 }
 .form-group{
@@ -142,7 +142,7 @@ button{
     flex-direction: column;
     gap :5px;
     font-size: 16px;
-   
+    margin-top: 0px;
     color: #a21b1b;
    
     
@@ -245,6 +245,23 @@ footer {
             grid-template-columns: 1fr 1fr;
             gap: 30px;
         }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+
+        }
+        .form-group label {
+                font-size: 1em;
+                color: #c0392b;
+                display: block; 
+                margin-bottom: 0px;
+}
+
         @media (max-width: 600px) {
             .skills-grid {
                 grid-template-columns: 1fr;
