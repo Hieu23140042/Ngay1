@@ -1,0 +1,168 @@
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.5;
+    color: #000;
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+header nav { padding: 15px; text-align: center; background-color: #f4f4f4; }
+
+header b {
+    font-size: 26px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/* 3. Thanh ngang và Tiêu đề mục lớn */
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 20px 0 0 0;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 5px; /* Để sát với thanh hr phía trên */
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: blue;
+}
+
+
+p {
+    margin: 8px 0;
+    text-align: justify; 
+}
+
+.job-header, .edu-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.company p, .experience p {
+    position: relative;
+    padding-left: 20px; /* Tạo khoảng trống cho dấu chấm đầu dòng */
+    margin-bottom: 5px;
+}
+
+/* Tạo dấu chấm đầu dòng giả bằng CSS */
+.company p::before, .experience p::before {
+    content: "•";
+    position: absolute;
+    left: 5px;
+    font-weight: bold;
+}
+
+.company p:first-child, .experience p:first-child {
+    padding-left: 0;
+    font-weight: bold;
+}
+.seller p:first-child::before, .experience p:first-child::before {
+    content: "";
+}
+
+.c p, .d p {
+    text-align: left;
+    font-weight: 500;
+}
+.right{ 
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+
+}
+nav :hover{
+
+
+    color: #c01212;
+
+}
+.header-content{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: rgb(105, 178, 121);
+
+}
+button{
+    background-color: rgb(206, 90, 113);
+    color : #a0c120;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap :5px;
+    font-size: 16px;
+   
+    color: #a21b1b;
+   
+    
+}
+
+select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 20px;
+
+}
+.experience p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.seller{
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.company p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.target p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    background-color: #333; 
+    color: white; 
+    margin-top: 40px; }
